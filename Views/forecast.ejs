@@ -1,0 +1,18 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+</head>
+<h1> Weekly Weather Update</h1>
+<body>
+    <% forecast.forEach((dayOf) => { %>
+        <li><%= dayOf.date %></li>
+        <li><%= dayOf.day %></li>
+        <li><%= dayOf.high %></li>
+        <li><%= dayOf.low %></li>
+        <li><%= dayOf.skytextday %></li>
+        <li><%= dayOf.precip %></li>
+    <% }) %>
+</body>
+</html>
